@@ -2,6 +2,10 @@ import { useState, useEffect } from "react";
 import image from "./icon-person.svg";
 
 export const NumPeople = ({ props }) => {
+  // The NumPeople component keeps track of # of people to divide the bill among
+  // Displays error if value is less than 1
+  // Only digits allowed in input
+
   const { people, changePeople } = props;
   const [isError, setIsError] = useState(false);
 

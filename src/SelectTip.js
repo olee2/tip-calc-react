@@ -1,4 +1,7 @@
 export const SelectTip = ({ props }) => {
+  // The SelectTip keeps track of how much tip should be added to the bill
+  // Generating radio buttons for each of the values in the array, in addition to a custom option.
+
   const { tip, changeTip, resetBtn } = props;
   const percentages = [5, 10, 15, 25, 50];
   return (

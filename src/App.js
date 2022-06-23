@@ -11,9 +11,9 @@ const App = () => {
   const [total, setTotal] = useState(0);
   const [isDisabled, setIsDisabled] = useState(true);
 
+  // Uncheck tip button
   const resetBtn = () => {
     const btns = document.querySelectorAll("input[name='percent']");
-
     btns.forEach((btn) => {
       btn.checked = false;
     });
@@ -35,8 +35,10 @@ const App = () => {
     let currentTip = (bill * (tip / 100)) / people;
     let currentTotal = currentTip + bill / people;
 
+    // Enable reset button if there is any value in the calculator form
     bill || tip || people ? setIsDisabled(false) : setIsDisabled(true);
 
+    // Only display result if the value is not infinity or NaN
     isFinite(currentTip) && !isNaN(currentTip)
       ? setTipAmount(currentTip.toFixed(2))
       : setTipAmount((0).toFixed(2));
