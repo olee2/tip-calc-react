@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/olee2/Tip-Calculator
-- Live Site URL: https://calctip-challenge.netlify.app/
+- Solution URL: https://github.com/olee2/tip-calc-react
+- Live Site URL: https://react-tipcalc.netlify.app/
 
 ## My process
 
